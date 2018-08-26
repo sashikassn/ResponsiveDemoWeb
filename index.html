@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>IJSE</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 10px;
+            border-bottom: 1px solid grey;
+        }
+
+        #imgLogo {
+            width: 300px;
+        }
+
+        #divLogo {
+            margin-left: 10px;
+
+        }
+
+
+        header nav ul {
+            position: absolute;
+            top: 25px;
+            right: 150px;
+
+        }
+
+        header nav ul li {
+            display: inline;
+            padding: 10px;
+            cursor: pointer;
+
+
+        }
+
+
+
+
+        header nav ul li:hover {
+            background-color: reD;
+            border-radius: 10px;
+
+        }
+
+
+        #slider{
+            animation-name: slider;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            width: 100%;
+            height: 450px;
+            margin-top: 5px;
+            padding-bottom: 10px;
+            background-repeat: repeat;
+            background-position: center;
+            border-bottom: 1px solid rgb(6, 161, 189);
+        }
+
+
+        section {
+            text-align: center;
+            background-color: yellow;
+
+        }
+
+        section p{
+            text-align: justify;
+            padding:0px 20px;
+        }
+
+        footer{
+            background-color: rgb(12, 165, 58);
+            text-align: center;
+            padding: 20px;
+        }
+        @keyframes slider {
+
+            0% {
+                background: url(images/image1.jpg) center center;
+            }
+
+            25% {
+                background: url(images/image3.jpg);
+            }
+
+            50% {
+                background: url(images/image2.jpg);
+            }
+
+            75% {
+                background: url(images/image1.jpg);
+            }
+
+            100% {
+                background: url(images/image2.jpg);
+            }
+
+        }
+        @media all and (max-width: 1024px){
+
+            header nav ul{
+                position: relative;
+                left: 0;
+                top: 0;
+                margin: 10px 0 0;
+                padding: 0;
+            }
+
+            header nav ul li{
+                display: block;
+                text-align: center;
+            }
+
+            header{
+                text-align: center;
+            }
+
+            #slider{
+                display: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img id="imgLogo" src="images/ijse-logo.gif" alt="ijse-logo">
+        <div id="divLogo">Institute of Software Engineering</div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Course</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="slider">
+        </div>
+        <section>
+            <h1>Welcome to Institute of Software Engineering</h1>
+            <p>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, iste magni. Reiciendis quia laudantium, aliquam delectus
+                quo iure molestias corporis ab cupiditate obcaecati. Accusamus aliquid voluptatem repellendus, esse repudiandae
+                sed? Rem, natus perferendis. Nobis, ut rem suscipit labore eum ea modi praesentium qui perferendis quas sequi
+                omnis, dolores iure minus autem fuga adipisci sed velit totam, iste et excepturi in? Cupiditate voluptas
+                doloribus, reprehenderit magni consequatur, ullam deserunt id nostrum in sed, vitae laboriosam illum ipsum!
+                Repellat perferendis, temporibus minus praesentium ipsam ex? Eligendi corrupti sequi sit quos veritatis quidem.
+                Ratione alias fuga nihil deserunt perferendis dolores iusto quos aspernatur accusamus magni doloremque nobis,
+                mollitia dolor eveniet reprehenderit sint asperiores, totam expedita. Sed amet ab cum quidem perferendis
+                velit dolores. Consequatur minima, corrupti, nemo amet obcaecati ratione laboriosam numquam adipisci distinctio
+                blanditiis unde cupiditate facere libero odit est veritatis, nulla aliquam aliquid velit accusamus laudantium
+                repudiandae! Animi dicta inventore necessitatibus?
+            </p>
+
+
+            <p>
+          
+            </p>
+        </section>
+    </main>
+    <footer>
+        Copyright © 2018 IJSE - Institute of java and software Engineering.
+    </footer>
+
+
+
+</body>
+
+</html>
